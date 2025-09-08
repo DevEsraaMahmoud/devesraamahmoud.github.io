@@ -3,96 +3,44 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-  <title>Project — Portfolio Details | Esraa Mahmoud</title>
-  <meta name="description" content="Detailed view for a selected project by Esraa Mahmoud." />
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Vendor CSS Files -->
+  <title>Project — Portfolio Details</title>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-  <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
-
 <body>
-
   <main id="main" class="py-5">
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <h2 class="portfolio-title">Atar Store</h2>
-
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="Screenshot 1">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid" alt="Screenshot 2">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" class="img-fluid" alt="Screenshot 3">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
+    <div class="container">
+      <h2 class="mb-3">Atar Store</h2>
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="swiper portfolio-details-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="assets/img/portfolio/portfolio-details-2.jpg" class="img-fluid"></div>
             </div>
-          </div>
-
-          <div class="col-lg-4 portfolio-info">
-            <h3>Project information</h3>
-            <ul class="list-unstyled">
-              <li><strong>Category</strong>: Web Application</li>
-              <li><strong>Role</strong>: Full-Stack Developer</li>
-              <li><strong>Tech</strong>: Laravel, Vue.js, MySQL</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Repository</strong>: <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
-
-            <p class="mb-0">
-              A production-ready E-commerce experience with secure checkout, product search, and admin workflows.
-              Built with clean architecture and performance best practices.
-            </p>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
-
-        <div class="mt-4">
-          <a href="index.html#projects" class="btn btn-outline-primary">
-            <i class="bi bi-arrow-left me-1"></i> Back to Projects
-          </a>
+        <div class="col-lg-4">
+          <h4>Project Info</h4>
+          <ul>
+            <li><strong>Category</strong>: Web App</li>
+            <li><strong>Tech</strong>: Laravel, Vue.js</li>
+            <li><strong>Date</strong>: March 2020</li>
+            <li><strong>URL</strong>: <a href="#">www.example.com</a></li>
+          </ul>
+          <p>E-commerce store with checkout, products, and dashboards. Built using Laravel + Vue.js.</p>
         </div>
-
       </div>
-    </div><!-- End Portfolio Details -->
-  </main><!-- End #main -->
-
-  <footer class="text-center py-4">
-    <small>© <span id="year"></span> Esraa Mahmoud</small>
-  </footer>
-
-  <!-- Vendor JS Files -->
+      <a href="index.html#projects" class="btn btn-outline-primary mt-3"><i class="bi bi-arrow-left"></i> Back</a>
+    </div>
+  </main>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS -->
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    new Swiper('.portfolio-details-slider',{pagination:{el:'.swiper-pagination'}});
   </script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
