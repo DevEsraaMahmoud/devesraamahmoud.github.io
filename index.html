@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Esraa Mahmoud — Senior Software Developer (PHP/Laravel, Vue.js)</title>
-  <meta name="description" content="Senior Software Developer with 5+ years building scalable, secure web applications. PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD." />
-  <meta name="keywords" content="Esraa Mahmoud, Senior Software Developer, PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD, MySQL, MongoDB" />
+  <title>Esraa Mahmoud — Senior Software Developer</title>
+  <meta name="description" content="Senior Software Developer with 5+ years building scalable, secure web applications using PHP, Laravel, Vue.js, and modern frameworks." />
+  <meta name="keywords" content="Esraa Mahmoud, Software Developer, PHP, Laravel, Vue.js, APIs, DDD, SaaS, E-commerce, Portfolio" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
@@ -25,314 +25,103 @@
   <!-- Main CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
 
+  <!-- Dark Mode -->
   <style>
-    /* light polish */
-    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    header#header{padding:40px 0}
-    .brand-row{gap:16px}
-    .nav-link{font-weight:500}
-    .badge-skill{background:#f1f3f5;border:1px solid #e7eaee;border-radius:999px;padding:.4rem .75rem;margin:.25rem;display:inline-block;font-weight:500}
-    .section-title h2{font-weight:700}
-    .portfolio .portfolio-wrap{border-radius:12px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.06)}
-    .resume .resume-item{border-left:2px solid #0d6efd;padding-left:16px;margin-bottom:24px}
-    .muted{color:#6c757d}
-    .link-underline{text-decoration:underline;text-underline-offset:2px}
-    .social-links a{font-size:20px;margin-right:12px}
-    img.lazy{min-height:120px;background:#f6f7f9}
-    @media (max-width: 575.98px){h1{font-size:28px}}
+    body.dark { background:#121212; color:#e0e0e0; }
+    body.dark .section-title h2 { color:#fff; }
+    body.dark .card, body.dark .portfolio-wrap { background:#1e1e1e; border-color:#333; }
+    body.dark .muted { color:#bbb !important; }
+    .dark-toggle { cursor:pointer; border:none; background:none; font-size:20px; }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
 </head>
 
 <body>
-
   <!-- ======= Header ======= -->
   <header id="header">
-    <div class="container">
-      <div class="d-flex align-items-center brand-row">
-        <a href="#header" class="me-2" aria-label="Home">
-          <img src="assets/img/favicon.png" alt="Logo" width="64" height="64" class="img-fluid" />
-        </a>
-        <div>
-          <h1 class="mb-1"><a href="#header" class="text-dark text-decoration-none">Esraa Mahmoud</a></h1>
-          <p class="mb-0 text-muted">Senior Software Developer — PHP, Laravel, Vue.js</p>
-          <p class="mb-0">
-            <a href="mailto:esraa.dev@gmail.com" class="link-underline">esraa.dev@gmail.com</a> •
-            <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener" class="link-underline">GitHub</a> •
-            <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener" class="link-underline">LinkedIn</a>
-          </p>
-        </div>
-      </div>
-
-      <nav id="navbar" class="navbar mt-3">
-        <ul class="d-flex list-unstyled gap-3 m-0">
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#resume">Experience</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="mt-3">
-        <a href="Esraa%20Mahmoud.pdf" class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener">
-          <i class="bi bi-download me-1"></i>Download CV (PDF)
-        </a>
-        <a href="#projects" class="btn btn-outline-primary btn-sm">View Projects</a>
-      </div>
-
-      <div class="social-links mt-3">
-        <a href="https://github.com/DevEsraaMahmoud" class="github" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook" target="_blank" rel="noopener" aria-label="Facebook">
-          <i class="bi bi-facebook"></i></a>
-      </div>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1><a href="#">Esraa Mahmoud</a></h1>
+      <button id="darkToggle" class="dark-toggle"><i class="bi bi-moon"></i></button>
     </div>
   </header>
-  <!-- End Header -->
 
   <!-- ======= About ======= -->
-  <section id="about" class="about py-5">
+  <section id="about" class="py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-
-      <div class="row align-items-center">
-        <div class="col-lg-8">
-          <p class="lead">
-            I’m a <strong>Senior Software Developer</strong> with 5+ years building
-            <strong>scalable, secure, and high-performance web applications</strong> using
-            PHP/Laravel and Vue.js. I’ve delivered multi-tenancy platforms, B2B APIs, and E-commerce solutions,
-            with a strong focus on performance, clean architecture, and testing (PHPUnit, Pest).
-          </p>
-          <div class="mt-3">
-            <span class="badge-skill">Multi-Tenancy</span>
-            <span class="badge-skill">REST & GraphQL APIs</span>
-            <span class="badge-skill">DDD</span>
-            <span class="badge-skill">MySQL</span>
-            <span class="badge-skill">MongoDB</span>
-            <span class="badge-skill">Livewire</span>
-            <span class="badge-skill">Filament</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Skills ======= -->
-  <section id="skills" class="py-5 bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="mb-2">Backend</h5>
-          <p class="mb-0">PHP, Laravel, Livewire, Filament, Inertia.js</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="mb-2">Frontend</h5>
-          <p class="mb-0">Vue.js, React.js, HTML, CSS, JavaScript</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="mb-2">Data & Search</h5>
-          <p class="mb-0">MySQL, MongoDB, Scout, MeiliSearch, Algolia, Typesense</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="mb-2">Architecture</h5>
-          <p class="mb-0">Domain-Driven Design (DDD), Clean Architecture, Multi-Tenancy</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="mb-2">Testing & Quality</h5>
-          <p class="mb-0">PHPUnit, Pest, API Testing, Queues & Jobs</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="mb-2">Tools</h5>
-          <p class="mb-0">Git, GitHub, Agile/Jira, CI/CD</p>
-        </div>
-      </div>
+      <div class="section-title"><h2>About</h2></div>
+      <p>
+        I’m a <strong>Senior Software Developer</strong> with 5+ years building
+        <strong>scalable, secure, and high-performance web applications</strong> using
+        PHP/Laravel and Vue.js. Delivered multi-tenancy platforms, APIs, and E-commerce solutions,
+        with focus on performance, clean architecture, and testing.
+      </p>
     </div>
   </section>
 
   <!-- ======= Projects ======= -->
-  <section id="projects" class="portfolio py-5">
+  <section id="projects" class="portfolio py-5 bg-light">
     <div class="container">
-      <div class="section-title">
-        <h2>Projects</h2>
-        <p class="muted">Selected work. More on <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener">GitHub</a>.</p>
-      </div>
-
-      <div class="row gy-4">
-        <!-- E-Commerce App -->
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/ecommerce.png" class="img-fluid lazy" alt="E-Commerce Application" loading="lazy" />
-            <div class="p-3">
-              <h5 class="mb-1">E-Commerce Application</h5>
-              <p class="muted mb-2">Roles, orders, reviews, advanced search. <strong>Laravel, MySQL, MeiliSearch, Livewire, Pest, DDD</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/EcommApp">
-                <i class="bi bi-github me-1"></i>View Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Laravel Tenancy -->
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/tenancy.png" class="img-fluid lazy" alt="Laravel Tenancy System" loading="lazy" />
-            <div class="p-3">
-              <h5 class="mb-1">Laravel Tenancy System</h5>
-              <p class="muted mb-2">Isolated tenants, dynamic provisioning, centralized admin. <strong>Laravel, MySQL, PHPUnit</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/laravel-tenancy">
-                <i class="bi bi-github me-1"></i>View Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- CMS & HRM -->
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/cms.png" class="img-fluid lazy" alt="CMS with HRM Modules" loading="lazy" />
-            <div class="p-3">
-              <h5 class="mb-1">CMS with HRM Modules</h5>
-              <p class="muted mb-2">APIs + notifications (Firebase, email, SMS). <strong>Laravel, MySQL</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/laravel-content-management-APIs">
-                <i class="bi bi-github me-1"></i>View Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- ZRestaurant / Reservation System -->
-        <div class="col-lg-4 col-md-6">
-          <div class="portfolio-wrap">
-            <img src="assets/img/projects/restaurant.png" class="img-fluid lazy" alt="Reservation System" loading="lazy" />
-            <div class="p-3">
-              <h5 class="mb-1">Reservation System</h5>
-              <p class="muted mb-2">Full admin & client flows with APIs. <strong>Laravel, Vue.js</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/ZRestaurant">
-                <i class="bi bi-github me-1"></i>View Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======= Experience / Resume ======= -->
-  <section id="resume" class="resume py-5 bg-light">
-    <div class="container">
-      <div class="section-title">
-        <h2>Experience</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12">
-
-          <div class="resume-item">
-            <h4>Senior Software Developer — Sejel Technology Co. Ltd.</h4>
-            <h6 class="muted">Remote — Saudi Arabia • Jan 2025 – Present</h6>
-            <ul>
-              <li>Engineered and optimized <strong>EWPR HEC B2B API</strong> with authenticated, encrypted downloads & secure file handling.</li>
-              <li>Reduced bug reports by <strong>30%</strong> via improvements to complex business logic.</li>
-              <li>Delivered new committee workflows using <strong>Laravel & Vue.js</strong>.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Full-Stack Developer — Career 180</h4>
-            <h6 class="muted">Cairo, Egypt • May 2024 – Dec 2024</h6>
-            <ul>
-              <li>Enhanced course/session features, boosting engagement by <strong>25%</strong>.</li>
-              <li>Implemented <strong>multi-tenancy</strong> with Laravel Tenancy; improved analytics dashboards.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Full-Stack Developer — Aloha E-Commerce</h4>
-            <h6 class="muted">Cairo, Egypt • Mar 2023 – May 2024</h6>
-            <ul>
-              <li>Integrated <strong>PayMob</strong>, ensured secure transactions; connected Google Ads API & Facebook Pixel.</li>
-              <li>Improved performance, reducing page load time by <strong>40%</strong>.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>Full-Stack Developer — Spider SEO</h4>
-            <h6 class="muted">Remote — Saudi Arabia • Apr 2022 – Mar 2023</h6>
-            <ul>
-              <li>Designed auth workflows & DB schemas; automated WordPress pipelines with custom Laravel APIs.</li>
-              <li>Delivered reporting dashboards used by <strong>200+ internal clients</strong>.</li>
-            </ul>
-          </div>
-
-          <div class="resume-item">
-            <h4>ERP Developer — MAS for Programming</h4>
-            <h6 class="muted">Cairo, Egypt • Nov 2020 – Apr 2022</h6>
-            <ul>
-              <li>Contributed to ERP modules (Accounting, Inventory, HR); built APIs & reporting features.</li>
-            </ul>
-          </div>
-
-          <p class="mt-3">
-            <a href="Esraa%20Mahmoud.pdf" target="_blank" rel="noopener" class="link-underline">View full resume (PDF)</a>
-          </p>
-        </div>
-      </div>
+      <div class="section-title"><h2>Projects</h2></div>
+      <div id="projectsContainer" class="row gy-4"></div>
     </div>
   </section>
 
   <!-- ======= Contact ======= -->
-  <section id="contact" class="contact py-5">
+  <section id="contact" class="py-5">
     <div class="container">
-      <div class="section-title">
-        <h2>Contact</h2>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="info-box p-4 border rounded">
-            <i class="bx bx-map"></i>
-            <h5>Location</h5>
-            <p class="mb-0">Cairo, Egypt</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="info-box p-4 border rounded">
-            <i class="bx bx-share-alt"></i>
-            <h5>Social</h5>
-            <p class="mb-1"><a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener">GitHub</a></p>
-            <p class="mb-0"><a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener">LinkedIn</a></p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="info-box p-4 border rounded">
-            <i class="bx bx-envelope"></i>
-            <h5>Email</h5>
-            <p class="mb-0"><a href="mailto:esraa.dev@gmail.com">esraa.dev@gmail.com</a></p>
-          </div>
-        </div>
-      </div>
-
+      <div class="section-title"><h2>Contact</h2></div>
+      <p>Email: <a href="mailto:esraa.dev@gmail.com">esraa.dev@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/DevEsraaMahmoud" target="_blank">DevEsraaMahmoud</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank">Profile</a></p>
     </div>
   </section>
 
   <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    document.getElementById('darkToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const icon = document.querySelector('#darkToggle i');
+      icon.classList.toggle('bi-moon');
+      icon.classList.toggle('bi-sun');
+    });
+  </script>
+
+  <!-- Dynamic Projects Loader -->
+  <script>
+    fetch('projects.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('projectsContainer');
+        data.forEach(p => {
+          container.innerHTML += `
+            <div class="col-lg-4 col-md-6">
+              <div class="portfolio-wrap p-3 border rounded">
+                <img src="${p.image}" class="img-fluid" alt="${p.title}">
+                <h5 class="mt-2">${p.title}</h5>
+                <p class="muted">${p.description}</p>
+                <a href="${p.link}" target="_blank" class="btn btn-sm btn-outline-primary">
+                  <i class="bi bi-github me-1"></i>View Code
+                </a>
+              </div>
+            </div>`;
+        });
+      });
+  </script>
 </body>
 </html>
