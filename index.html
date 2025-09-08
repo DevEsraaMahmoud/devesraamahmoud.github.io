@@ -23,15 +23,15 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Main CSS -->
-  <link href="style.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
 
   <style>
+    /* light polish */
     body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
-    .nav-link{font-weight:500}
     header#header{padding:40px 0}
     .brand-row{gap:16px}
+    .nav-link{font-weight:500}
     .badge-skill{background:#f1f3f5;border:1px solid #e7eaee;border-radius:999px;padding:.4rem .75rem;margin:.25rem;display:inline-block;font-weight:500}
-    .btn-primary{border-radius:10px}
     .section-title h2{font-weight:700}
     .portfolio .portfolio-wrap{border-radius:12px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.06)}
     .resume .resume-item{border-left:2px solid #0d6efd;padding-left:16px;margin-bottom:24px}
@@ -49,21 +49,23 @@
   <header id="header">
     <div class="container">
       <div class="d-flex align-items-center brand-row">
-        <a href="#header" class="me-2"><img src="assets/img/favicon.png" alt="Logo" width="64" height="64" class="img-fluid" /></a>
+        <a href="#header" class="me-2" aria-label="Home">
+          <img src="assets/img/favicon.png" alt="Logo" width="64" height="64" class="img-fluid" />
+        </a>
         <div>
           <h1 class="mb-1"><a href="#header" class="text-dark text-decoration-none">Esraa Mahmoud</a></h1>
-          <p class="mb-0 muted">Senior Software Developer — PHP, Laravel, Vue.js</p>
+          <p class="mb-0 text-muted">Senior Software Developer — PHP, Laravel, Vue.js</p>
           <p class="mb-0">
             <a href="mailto:esraa.dev@gmail.com" class="link-underline">esraa.dev@gmail.com</a> •
-            <a href="https://github.com/DevEsraaMahmoud" target="_blank" class="link-underline">GitHub</a> •
-            <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" class="link-underline">LinkedIn</a>
+            <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener" class="link-underline">GitHub</a> •
+            <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener" class="link-underline">LinkedIn</a>
           </p>
         </div>
       </div>
 
       <nav id="navbar" class="navbar mt-3">
         <ul class="d-flex list-unstyled gap-3 m-0">
-          <li><a class="nav-link active" href="#about">About</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
           <li><a class="nav-link" href="#resume">Experience</a></li>
@@ -72,14 +74,19 @@
       </nav>
 
       <div class="mt-3">
-        <a href="Esraa%20Mahmoud.pdf" class="btn btn-primary btn-sm me-2" target="_blank"><i class="bi bi-download me-1"></i>Download CV (PDF)</a>
+        <a href="Esraa%20Mahmoud.pdf" class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener">
+          <i class="bi bi-download me-1"></i>Download CV (PDF)
+        </a>
         <a href="#projects" class="btn btn-outline-primary btn-sm">View Projects</a>
       </div>
 
       <div class="social-links mt-3">
-        <a href="https://github.com/DevEsraaMahmoud" class="github" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://github.com/DevEsraaMahmoud" class="github" target="_blank" rel="noopener" aria-label="GitHub">
+          <i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="bi bi-facebook"></i></a>
       </div>
     </div>
   </header>
@@ -124,27 +131,27 @@
       <div class="row">
         <div class="col-md-4">
           <h5 class="mb-2">Backend</h5>
-          <p>PHP, Laravel, Livewire, Filament, Inertia.js</p>
+          <p class="mb-0">PHP, Laravel, Livewire, Filament, Inertia.js</p>
         </div>
         <div class="col-md-4">
           <h5 class="mb-2">Frontend</h5>
-          <p>Vue.js, React.js, HTML, CSS, JavaScript</p>
+          <p class="mb-0">Vue.js, React.js, HTML, CSS, JavaScript</p>
         </div>
         <div class="col-md-4">
           <h5 class="mb-2">Data & Search</h5>
-          <p>MySQL, MongoDB, Scout, MeiliSearch, Algolia, Typesense</p>
+          <p class="mb-0">MySQL, MongoDB, Scout, MeiliSearch, Algolia, Typesense</p>
         </div>
         <div class="col-md-4">
           <h5 class="mb-2">Architecture</h5>
-          <p>Domain-Driven Design (DDD), Clean Architecture, Multi-Tenancy</p>
+          <p class="mb-0">Domain-Driven Design (DDD), Clean Architecture, Multi-Tenancy</p>
         </div>
         <div class="col-md-4">
           <h5 class="mb-2">Testing & Quality</h5>
-          <p>PHPUnit, Pest, API Testing, Queues & Jobs</p>
+          <p class="mb-0">PHPUnit, Pest, API Testing, Queues & Jobs</p>
         </div>
         <div class="col-md-4">
           <h5 class="mb-2">Tools</h5>
-          <p>Git, GitHub, Agile/Jira, CI/CD</p>
+          <p class="mb-0">Git, GitHub, Agile/Jira, CI/CD</p>
         </div>
       </div>
     </div>
@@ -155,7 +162,7 @@
     <div class="container">
       <div class="section-title">
         <h2>Projects</h2>
-        <p class="muted">Selected work. More on <a href="https://github.com/DevEsraaMahmoud" target="_blank">GitHub</a>.</p>
+        <p class="muted">Selected work. More on <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener">GitHub</a>.</p>
       </div>
 
       <div class="row gy-4">
@@ -166,7 +173,7 @@
             <div class="p-3">
               <h5 class="mb-1">E-Commerce Application</h5>
               <p class="muted mb-2">Roles, orders, reviews, advanced search. <strong>Laravel, MySQL, MeiliSearch, Livewire, Pest, DDD</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/EcommApp">
+              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/EcommApp">
                 <i class="bi bi-github me-1"></i>View Code
               </a>
             </div>
@@ -180,7 +187,7 @@
             <div class="p-3">
               <h5 class="mb-1">Laravel Tenancy System</h5>
               <p class="muted mb-2">Isolated tenants, dynamic provisioning, centralized admin. <strong>Laravel, MySQL, PHPUnit</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/laravel-tenancy">
+              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/laravel-tenancy">
                 <i class="bi bi-github me-1"></i>View Code
               </a>
             </div>
@@ -194,7 +201,7 @@
             <div class="p-3">
               <h5 class="mb-1">CMS with HRM Modules</h5>
               <p class="muted mb-2">APIs + notifications (Firebase, email, SMS). <strong>Laravel, MySQL</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/laravel-content-management-APIs">
+              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/laravel-content-management-APIs">
                 <i class="bi bi-github me-1"></i>View Code
               </a>
             </div>
@@ -208,7 +215,7 @@
             <div class="p-3">
               <h5 class="mb-1">Reservation System</h5>
               <p class="muted mb-2">Full admin & client flows with APIs. <strong>Laravel, Vue.js</strong>.</p>
-              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/ZRestaurant">
+              <a class="btn btn-sm btn-outline-primary" target="_blank" rel="noopener" href="https://github.com/DevEsraaMahmoud/ZRestaurant">
                 <i class="bi bi-github me-1"></i>View Code
               </a>
             </div>
@@ -275,7 +282,7 @@
           </div>
 
           <p class="mt-3">
-            <a href="Esraa%20Mahmoud.pdf" target="_blank" class="link-underline">View full resume (PDF)</a>
+            <a href="Esraa%20Mahmoud.pdf" target="_blank" rel="noopener" class="link-underline">View full resume (PDF)</a>
           </p>
         </div>
       </div>
@@ -302,8 +309,8 @@
           <div class="info-box p-4 border rounded">
             <i class="bx bx-share-alt"></i>
             <h5>Social</h5>
-            <p class="mb-1"><a href="https://github.com/DevEsraaMahmoud" target="_blank">GitHub</a></p>
-            <p class="mb-0"><a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank">LinkedIn</a></p>
+            <p class="mb-1"><a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener">GitHub</a></p>
+            <p class="mb-0"><a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener">LinkedIn</a></p>
           </div>
         </div>
 
@@ -326,6 +333,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS -->
-  <script src="main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
