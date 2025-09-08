@@ -1,0 +1,26 @@
+[
+  {
+    "title": "E-Commerce Application",
+    "description": "Full-stack solution with roles, orders, reviews, advanced search. Laravel, MySQL, MeiliSearch, Pest.",
+    "image": "assets/img/projects/ecommerce.png",
+    "link": "https://github.com/DevEsraaMahmoud/EcommApp"
+  },
+  {
+    "title": "Laravel Tenancy System",
+    "description": "Multi-tenancy with isolated tenants and centralized management.",
+    "image": "assets/img/projects/tenancy.png",
+    "link": "https://github.com/DevEsraaMahmoud/laravel-tenancy"
+  },
+  {
+    "title": "CMS with HRM Modules",
+    "description": "APIs + notifications (Firebase, email, SMS).",
+    "image": "assets/img/projects/cms.png",
+    "link": "https://github.com/DevEsraaMahmoud/laravel-content-management-APIs"
+  },
+  {
+    "title": "Reservation System",
+    "description": "Full admin & client flows with APIs. Laravel + Vue.js.",
+    "image": "assets/img/projects/restaurant.png",
+    "link": "https://github.com/DevEsraaMahmoud/ZRestaurant"
+  }
+]
