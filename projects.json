@@ -1,13 +1,13 @@
 [
   {
     "title": "E-Commerce Application",
-    "description": "Full-stack solution with roles, orders, reviews, advanced search. Laravel, MySQL, MeiliSearch, Pest.",
+    "description": "Full-stack solution with roles, orders, reviews, advanced search. Laravel, MySQL, MeiliSearch, Livewire, Pest, DDD.",
     "image": "assets/img/projects/ecommerce.png",
     "link": "https://github.com/DevEsraaMahmoud/EcommApp"
   },
   {
     "title": "Laravel Tenancy System",
-    "description": "Multi-tenancy with isolated tenants and centralized management.",
+    "description": "Multi-tenant platform with isolated environments and centralized admin.",
     "image": "assets/img/projects/tenancy.png",
     "link": "https://github.com/DevEsraaMahmoud/laravel-tenancy"
   },
