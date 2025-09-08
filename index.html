@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Esraa Mahmoud</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Esraa Mahmoud — Senior Software Developer (PHP/Laravel, Vue.js)</title>
+  <meta name="description" content="Senior Software Developer with 5+ years building scalable, secure web applications. PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD." />
+  <meta name="keywords" content="Esraa Mahmoud, Senior Software Developer, PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD, MySQL, MongoDB" />
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet">
+  <!-- Main CSS -->
+  <link href="style.css" rel="stylesheet" />
 
-  <!-- =======================================================
-  * Template Name: Personal - v4.5.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    .nav-link{font-weight:500}
+    header#header{padding:40px 0}
+    .brand-row{gap:16px}
+    .badge-skill{background:#f1f3f5;border:1px solid #e7eaee;border-radius:999px;padding:.4rem .75rem;margin:.25rem;display:inline-block;font-weight:500}
+    .btn-primary{border-radius:10px}
+    .section-title h2{font-weight:700}
+    .portfolio .portfolio-wrap{border-radius:12px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,.06)}
+    .resume .resume-item{border-left:2px solid #0d6efd;padding-left:16px;margin-bottom:24px}
+    .muted{color:#6c757d}
+    .link-underline{text-decoration:underline;text-underline-offset:2px}
+    .social-links a{font-size:20px;margin-right:12px}
+    img.lazy{min-height:120px;background:#f6f7f9}
+    @media (max-width: 575.98px){h1{font-size:28px}}
+  </style>
 </head>
 
 <body>
@@ -40,622 +48,284 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="container">
-      <a href="index.html" class="mr-auto"><img src="assets/img/favicon.png" alt="" width="100px" class="img-fluid"></a>
-      <h1 style="margin-top: 12px;"><a href="index.html">Esraa Mahmoud</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <h2><em>Passionate, innovative and deadline-driven <strong>Software Developer</strong></em></h2>
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
+      <div class="d-flex align-items-center brand-row">
+        <a href="#header" class="me-2"><img src="assets/img/favicon.png" alt="Logo" width="64" height="64" class="img-fluid" /></a>
+        <div>
+          <h1 class="mb-1"><a href="#header" class="text-dark text-decoration-none">Esraa Mahmoud</a></h1>
+          <p class="mb-0 muted">Senior Software Developer — PHP, Laravel, Vue.js</p>
+          <p class="mb-0">
+            <a href="mailto:esraa.dev@gmail.com" class="link-underline">esraa.dev@gmail.com</a> •
+            <a href="https://github.com/DevEsraaMahmoud" target="_blank" class="link-underline">GitHub</a> •
+            <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" class="link-underline">LinkedIn</a>
+          </p>
+        </div>
+      </div>
 
-          <li><a class="nav-link" href="#resume">Resume</a></li>
-
-<!--
-          <li><a class="nav-link" href="#services">Services</a></li>
--->
-          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <nav id="navbar" class="navbar mt-3">
+        <ul class="d-flex list-unstyled gap-3 m-0">
+          <li><a class="nav-link active" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#resume">Experience</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
 
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://github.com/DevEsraaMahmoud" class="github"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="mt-3">
+        <a href="Esraa%20Mahmoud.pdf" class="btn btn-primary btn-sm me-2" target="_blank"><i class="bi bi-download me-1"></i>Download CV (PDF)</a>
+        <a href="#projects" class="btn btn-outline-primary btn-sm">View Projects</a>
       </div>
 
+      <div class="social-links mt-3">
+        <a href="https://github.com/DevEsraaMahmoud" class="github" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook" target="_blank" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      </div>
     </div>
-  </header><!-- End Header -->
+  </header>
+  <!-- End Header -->
 
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
+  <!-- ======= About ======= -->
+  <section id="about" class="about py-5">
+    <div class="container">
       <div class="section-title">
         <h2>About</h2>
-        <p>Learn more about me</p>
       </div>
 
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-right">
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <h3>PHP &amp; Laravel Web Developer </h3>
-          
-        </div>
-      </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Counts ======= -->
-    <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <p class="lead">
+            I’m a <strong>Senior Software Developer</strong> with 5+ years building
+            <strong>scalable, secure, and high-performance web applications</strong> using
+            PHP/Laravel and Vue.js. I’ve delivered multi-tenancy platforms, B2B APIs, and E-commerce solutions,
+            with a strong focus on performance, clean architecture, and testing (PHPUnit, Pest).
+          </p>
+          <div class="mt-3">
+            <span class="badge-skill">Multi-Tenancy</span>
+            <span class="badge-skill">REST & GraphQL APIs</span>
+            <span class="badge-skill">DDD</span>
+            <span class="badge-skill">MySQL</span>
+            <span class="badge-skill">MongoDB</span>
+            <span class="badge-skill">Livewire</span>
+            <span class="badge-skill">Filament</span>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-    </div><!-- End Counts -->
-
-    <!-- ======= Skills  ======= -->
-    <div class="skills container">
-
+  <!-- ======= Skills ======= -->
+  <section id="skills" class="py-5 bg-light">
+    <div class="container">
       <div class="section-title">
         <h2>Skills</h2>
       </div>
 
-      <div class="row skills-content">
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">HTML <i class="val">100%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">CSS <i class="val">90%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">JavaScript <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-6">
-
-          <div class="progress">
-            <span class="skill">PHP <i class="val">80%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Laravel Framework <i class="val">75%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-          <div class="progress">
-            <span class="skill">Photoshop <i class="val">40%</i></span>
-            <div class="progress-bar-wrap">
-              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div><!-- End Skills -->
-
-    <!-- ======= Interests ======= -->
-  <div class="interests container">
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
       <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line" style="color: #ffbb2c;"></i>
-            <h3>E-Commerce</h3>
-          </div>
+        <div class="col-md-4">
+          <h5 class="mb-2">Backend</h5>
+          <p>PHP, Laravel, Livewire, Filament, Inertia.js</p>
         </div>
-        <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-            <h3>ERP</h3>
-          </div>
+        <div class="col-md-4">
+          <h5 class="mb-2">Frontend</h5>
+          <p>Vue.js, React.js, HTML, CSS, JavaScript</p>
         </div>
-        <div class="col-lg-4 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-            <h3>CRM</h3>
-          </div>
-        </div> 
-       
-    </div><!-- End Interests -->
-</div>
-    <!-- ======= Testimonials ======= -->
-    <!--<div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-1.png" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>&lt;!&ndash; End testimonial item &ndash;&gt;
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Designer</h4>
-            </div>
-          </div>&lt;!&ndash; End testimonial item &ndash;&gt;
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Store Owner</h4>
-            </div>
-          </div>&lt;!&ndash; End testimonial item &ndash;&gt;
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Freelancer</h4>
-            </div>
-          </div>&lt;!&ndash; End testimonial item &ndash;&gt;
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Entrepreneur</h4>
-            </div>
-          </div>&lt;!&ndash; End testimonial item &ndash;&gt;
-
+        <div class="col-md-4">
+          <h5 class="mb-2">Data & Search</h5>
+          <p>MySQL, MongoDB, Scout, MeiliSearch, Algolia, Typesense</p>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div> End Testimonials-->
-
-  </section><!-- End About Section -->
-
-<!-- ======= Resume Section ======= -->
-<section id="resume" class="resume">
-  <div class="container">
-
-      <div class="section-title">
-          <p>Explore My Resume</p>
-      </div>
-
-      <div class="row">        
-          <div class="col-lg-6">
-            <h3 class="resume-title">Experience</h3>
-            
-            <div class="resume-item">
-                <h4>Software Developer</h4>
-                <h5>May 2024 - Present</h5>
-                <p><em>Career 180</em></p>
-                <ul>
-                    <li>Developed applications using Filament, Livewire, and Laravel multi-tenancy, including Laravel Tenancy and Filament Tenancy.</li>
-                    <li>Performed maintenance, enhancements, and implemented new features for multi-panel setups.</li>
-                    <li>Collaborated cross-functionally to translate business needs into technical specifications.</li>
-                    <li>Conducted testing for Livewire, Filament, and Domain-Driven Design (DDD) using PHPUnit and Pest.</li>
-                </ul>
-            </div>
-
-            <div class="resume-item">
-                <h4>Full Stack Developer</h4>
-                <h5>Feb 2023 - May 2024</h5>
-                <p><em>Aloha EG</em></p>
-                <ul>
-                    <li>Built the SpiderSeo Project from scratch, including both Admin Area and Client Area.</li>
-                    <li>Developed APIs for mobile applications: one for managers and employees, and another for clients.</li>
-                </ul>
-            </div> 
-
-            <div class="resume-item">
-                <h4>PHP/Laravel Developer</h4>
-                <h5>Mar 2022 - Feb 2023</h5>
-                <p><em>SpiderSEO</em></p>
-                <ul>
-                    <li>Developed APIs for mobile applications: one for managers and employees, and another for clients.</li>
-                    <li>Created a WordPress plugin and integrated WordPress RESTful APIs to sync posts and products.</li>
-                    <li>Worked with both Salla.sa and Zid.sa REST APIs.</li>
-                </ul>
-            </div> 
-
-            <div class="resume-item">
-                <h4>ERP Developer</h4>
-                <h5>Oct 2021 - Mar 2022</h5>
-                <p><em>MAS ERP System, Obour City</em></p>
-                <ul>
-                    <li>Developed both frontend and backend using native JavaScript, AJAX, JSON APIs, and SQL database queries.</li>
-                    <li>Assisted in analyzing finance, inventory, POS, and HR modules.</li>
-                    <li>Supported clients and resolved technical issues in existing code.</li>
-                    <li>Created reports using Crystal Reports and SQL Server Reporting Services (SSRS).</li>
-                </ul>
-            </div>  
-
-            <div class="resume-item">
-                <h4>View Full Resume on <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" style="color: DodgerBlue">LinkedIn</a></h4>
-            </div> 
-          </div>
-
-          <div class="col-lg-6">          
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-                <h4>Bachelor of Statistics and Insurance</h4>
-                <h5>2014 - 2018</h5>
-                <p><em>Faculty of Commerce (English Section), Cairo University</em></p>
-            </div>
-            <div class="resume-item">
-                <h4>Postgraduate Diploma in Computer Science</h4>
-                <h5>2024 - Present</h5>
-                <p><em>Currently Pursuing</em></p>
-            </div>
+        <div class="col-md-4">
+          <h5 class="mb-2">Architecture</h5>
+          <p>Domain-Driven Design (DDD), Clean Architecture, Multi-Tenancy</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-2">Testing & Quality</h5>
+          <p>PHPUnit, Pest, API Testing, Queues & Jobs</p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-2">Tools</h5>
+          <p>Git, GitHub, Agile/Jira, CI/CD</p>
         </div>
       </div>
-
-  </div>
-</section><!-- End Resume Section -->
-
-
-
-  <!-- ======= Services Section ======= -->
-<!--  <section id="services" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </section>&lt;!&ndash; End Services Section &ndash;&gt;-->
+  </section>
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
+  <!-- ======= Projects ======= -->
+  <section id="projects" class="portfolio py-5">
     <div class="container">
-
       <div class="section-title">
-        <h2>Portfolio</h2>
-        <p>My Works</p>
+        <h2>Projects</h2>
+        <p class="muted">Selected work. More on <a href="https://github.com/DevEsraaMahmoud" target="_blank">GitHub</a>.</p>
+      </div>
+
+      <div class="row gy-4">
+        <!-- E-Commerce App -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-wrap">
+            <img src="assets/img/projects/ecommerce.png" class="img-fluid lazy" alt="E-Commerce Application" loading="lazy" />
+            <div class="p-3">
+              <h5 class="mb-1">E-Commerce Application</h5>
+              <p class="muted mb-2">Roles, orders, reviews, advanced search. <strong>Laravel, MySQL, MeiliSearch, Livewire, Pest, DDD</strong>.</p>
+              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/EcommApp">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laravel Tenancy -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-wrap">
+            <img src="assets/img/projects/tenancy.png" class="img-fluid lazy" alt="Laravel Tenancy System" loading="lazy" />
+            <div class="p-3">
+              <h5 class="mb-1">Laravel Tenancy System</h5>
+              <p class="muted mb-2">Isolated tenants, dynamic provisioning, centralized admin. <strong>Laravel, MySQL, PHPUnit</strong>.</p>
+              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/laravel-tenancy">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CMS & HRM -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-wrap">
+            <img src="assets/img/projects/cms.png" class="img-fluid lazy" alt="CMS with HRM Modules" loading="lazy" />
+            <div class="p-3">
+              <h5 class="mb-1">CMS with HRM Modules</h5>
+              <p class="muted mb-2">APIs + notifications (Firebase, email, SMS). <strong>Laravel, MySQL</strong>.</p>
+              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/laravel-content-management-APIs">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ZRestaurant / Reservation System -->
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-wrap">
+            <img src="assets/img/projects/restaurant.png" class="img-fluid lazy" alt="Reservation System" loading="lazy" />
+            <div class="p-3">
+              <h5 class="mb-1">Reservation System</h5>
+              <p class="muted mb-2">Full admin & client flows with APIs. <strong>Laravel, Vue.js</strong>.</p>
+              <a class="btn btn-sm btn-outline-primary" target="_blank" href="https://github.com/DevEsraaMahmoud/ZRestaurant">
+                <i class="bi bi-github me-1"></i>View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Experience / Resume ======= -->
+  <section id="resume" class="resume py-5 bg-light">
+    <div class="container">
+      <div class="section-title">
+        <h2>Experience</h2>
       </div>
 
       <div class="row">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-card">Card</li>
-            <li data-filter=".filter-web">Web</li>
-          </ul>
+        <div class="col-lg-12">
+
+          <div class="resume-item">
+            <h4>Senior Software Developer — Sejel Technology Co. Ltd.</h4>
+            <h6 class="muted">Remote — Saudi Arabia • Jan 2025 – Present</h6>
+            <ul>
+              <li>Engineered and optimized <strong>EWPR HEC B2B API</strong> with authenticated, encrypted downloads & secure file handling.</li>
+              <li>Reduced bug reports by <strong>30%</strong> via improvements to complex business logic.</li>
+              <li>Delivered new committee workflows using <strong>Laravel & Vue.js</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>Full-Stack Developer — Career 180</h4>
+            <h6 class="muted">Cairo, Egypt • May 2024 – Dec 2024</h6>
+            <ul>
+              <li>Enhanced course/session features, boosting engagement by <strong>25%</strong>.</li>
+              <li>Implemented <strong>multi-tenancy</strong> with Laravel Tenancy; improved analytics dashboards.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>Full-Stack Developer — Aloha E-Commerce</h4>
+            <h6 class="muted">Cairo, Egypt • Mar 2023 – May 2024</h6>
+            <ul>
+              <li>Integrated <strong>PayMob</strong>, ensured secure transactions; connected Google Ads API & Facebook Pixel.</li>
+              <li>Improved performance, reducing page load time by <strong>40%</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>Full-Stack Developer — Spider SEO</h4>
+            <h6 class="muted">Remote — Saudi Arabia • Apr 2022 – Mar 2023</h6>
+            <ul>
+              <li>Designed auth workflows & DB schemas; automated WordPress pipelines with custom Laravel APIs.</li>
+              <li>Delivered reporting dashboards used by <strong>200+ internal clients</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <h4>ERP Developer — MAS for Programming</h4>
+            <h6 class="muted">Cairo, Egypt • Nov 2020 – Apr 2022</h6>
+            <ul>
+              <li>Contributed to ERP modules (Accounting, Inventory, HR); built APIs & reporting features.</li>
+            </ul>
+          </div>
+
+          <p class="mt-3">
+            <a href="Esraa%20Mahmoud.pdf" target="_blank" class="link-underline">View full resume (PDF)</a>
+          </p>
         </div>
       </div>
-
-      <div class="row portfolio-container">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Reservasion System</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/DevEsraaMahmoud/ZRestaurant" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Reservasion System</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/DevEsraaMahmoud/ZRestaurant" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Reservasion System</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="https://github.com/DevEsraaMahmoud/ZRestaurant" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-6.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-7.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="assets/img/portfolio/portfolio-9.png" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
     </div>
-  </section><!-- End Portfolio Section -->
+  </section>
 
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
+  <!-- ======= Contact ======= -->
+  <section id="contact" class="contact py-5">
     <div class="container">
-
       <div class="section-title">
         <h2>Contact</h2>
-        <p>Contact Me</p>
       </div>
 
-      <div class="row mt-2">
-
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="info-box p-4 border rounded">
             <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>Cairo, Egypt</p>
+            <h5>Location</h5>
+            <p class="mb-0">Cairo, Egypt</p>
           </div>
         </div>
 
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
+        <div class="col-md-4">
+          <div class="info-box p-4 border rounded">
             <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://github.com/DevEsraaMahmoud" class="github"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+            <h5>Social</h5>
+            <p class="mb-1"><a href="https://github.com/DevEsraaMahmoud" target="_blank">GitHub</a></p>
+            <p class="mb-0"><a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank">LinkedIn</a></p>
           </div>
         </div>
 
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
+        <div class="col-md-4">
+          <div class="info-box p-4 border rounded">
             <i class="bx bx-envelope"></i>
-            <h3>Email Me</h3>
-            <p>esraa.dev@gmail.com</p>
+            <h5>Email</h5>
+            <p class="mb-0"><a href="mailto:esraa.dev@gmail.com">esraa.dev@gmail.com</a></p>
           </div>
         </div>
       </div>
+
     </div>
-  </section><!-- End Contact Section -->
+  </section>
 
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS -->
   <script src="main.js"></script>
-
 </body>
-
 </html>
