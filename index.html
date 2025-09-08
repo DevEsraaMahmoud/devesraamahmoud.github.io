@@ -7,11 +7,11 @@
   <title>Esraa Mahmoud — Senior Software Developer (PHP/Laravel, Vue.js)</title>
   <meta name="description" content="Senior Software Developer with 5+ years building scalable, secure web applications. PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD." />
   <meta name="keywords" content="Esraa Mahmoud, Senior Software Developer, PHP, Laravel, Vue.js, Livewire, Filament, Multi-Tenancy, APIs, DDD, MySQL, MongoDB" />
-<meta property="og:title" content="Esraa Mahmoud — Senior Software Developer" />
-<meta property="og:description" content="PHP/Laravel & Vue.js • Multi-Tenancy • APIs • DDD • E-Commerce" />
-<meta property="og:image" content="https://devesraamahmoud.github.io/assets/img/og-cover.png" />
-<meta property="og:url" content="https://devesraamahmoud.github.io/" />
-<meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:title" content="Esraa Mahmoud — Senior Software Developer" />
+  <meta property="og:description" content="PHP/Laravel & Vue.js • Multi-Tenancy • APIs • DDD • E-Commerce" />
+  <meta property="og:image" content="https://devesraamahmoud.github.io/assets/img/og-cover.png" />
+  <meta property="og:url" content="https://devesraamahmoud.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
@@ -31,103 +31,110 @@
   <link href="assets/css/style.css" rel="stylesheet" />
 
   <style>
-    /* Light polish */
+    /* Theme vars */
     :root {
-      --bg: #ffffff;
-      --text: #1f2328;
-      --muted: #6c757d;
-      --card: #ffffff;
-      --border: #e7eaee;
-      --chip-bg: #f1f3f5;
-      --brand: #0d6efd;
+      --bg: #ffffff; --text: #1f2328; --muted: #6c757d;
+      --card: #ffffff; --border: #e7eaee; --chip-bg: #f1f3f5; --brand: #0d6efd;
     }
     body.dark {
-      --bg: #0f1115;
-      --text: #e5e7eb;
-      --muted: #b5b8be;
-      --card: #171923;
-      --border: #252a36;
-      --chip-bg: #1d2230;
-      --brand: #5aa2ff;
+      --bg:#0f1115; --text:#e5e7eb; --muted:#b5b8be;
+      --card:#171923; --border:#252a36; --chip-bg:#1d2230; --brand:#5aa2ff;
     }
-    body{
-      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg); color:var(--text);
-    }
-    header#header{padding:32px 0}
-    .brand-row{gap:16px}
-    .nav-link{font-weight:500}
+
+    /* Base */
+    body{font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+    .muted{color:var(--muted)!important} .link-underline{text-decoration:underline;text-underline-offset:2px}
+    img{max-width:100%;height:auto;display:block}
+    .section-title h2{font-weight:700}
+
+    /* Header / Navbar */
+    header#header{background:var(--bg)}
+    .navbar-brand img{width:40px;height:40px}
+    .navbar-dark-toggle{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:10px;padding:.5rem .75rem}
+    .navbar-nav .nav-link{font-weight:500;padding:.5rem 0}
+    .brand-title{color:var(--text);text-decoration:none}
+
+    /* Hero meta */
     .badge-skill{
       background:var(--chip-bg); border:1px solid var(--border);
-      border-radius:999px; padding:.4rem .75rem; margin:.25rem; display:inline-block; font-weight:500
+      border-radius:999px; padding:.35rem .7rem; margin:.2rem; display:inline-block; font-weight:500; font-size:.9rem
     }
-    .section-title h2{font-weight:700}
-    .portfolio .portfolio-wrap{border-radius:12px; overflow:hidden; background:var(--card); border:1px solid var(--border); box-shadow:0 10px 25px rgba(0,0,0,.05)}
+
+    /* Cards / portfolio */
+    .portfolio .portfolio-wrap{border-radius:12px; overflow:hidden; background:var(--card); border:1px solid var(--border); box-shadow:0 10px 25px rgba(0,0,0,.05); height:100%}
+    .portfolio .thumb{
+      width:100%; aspect-ratio: 16/9; object-fit:cover; background:#f6f7f9;
+    }
+
     .resume .resume-item{border-left:2px solid var(--brand); padding-left:16px; margin-bottom:24px}
-    .muted{color:var(--muted)!important}
-    .link-underline{text-decoration:underline; text-underline-offset:2px}
-    .social-links a{font-size:20px; margin-right:12px}
-    .btn-outline-primary{border-color:var(--brand); color:var(--brand)}
-    .btn-outline-primary:hover{background:var(--brand); color:#fff}
-    .btn-primary{background:var(--brand); border-color:var(--brand)}
     .info-box{background:var(--card); border:1px solid var(--border)}
-    img.lazy{min-height:120px; background:#f6f7f9}
-    @media (max-width: 575.98px){h1{font-size:28px}}
-    .dark-toggle{cursor:pointer; border:1px solid var(--border); background:var(--card); color:var(--text); border-radius:10px; padding:.5rem .75rem}
+
+    /* Spacing */
+    section{scroll-margin-top:80px}
+
+    /* Mobile tweaks */
+    @media (max-width: 575.98px){
+      h1{font-size:26px}
+      .lead{font-size:1rem}
+      .stack-sm .btn{width:100%; margin-bottom:.5rem}
+      .navbar .contact-line{font-size:.9rem}
+      .brand-meta{font-size:.9rem}
+    }
+
+    /* Container padding for small screens */
+    .container{padding-left:1rem;padding-right:1rem}
   </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
-      <div class="d-flex align-items-center justify-content-between">
-        <div class="d-flex align-items-center brand-row">
-          <a href="#header" class="me-2" aria-label="Home">
-            <img src="assets/img/favicon.png" alt="Logo" width="48" height="48" class="img-fluid" />
-          </a>
-          <div>
-            <h1 class="mb-1"><a href="#header" class="text-decoration-none" style="color:var(--text)">Esraa Mahmoud</a></h1>
-            <p class="mb-0 muted">Senior Software Developer — PHP, Laravel, Vue.js</p>
-            <p class="mb-0">
-              <a href="mailto:esraa.dev@gmail.com" class="link-underline">esraa.dev@gmail.com</a> •
-              <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener" class="link-underline">GitHub</a> •
-              <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener" class="link-underline">LinkedIn</a>
-            </p>
-          </div>
+  <!-- ======= Header (sticky, collapsible) ======= -->
+  <header id="header" class="sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-md" style="background:var(--bg)">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#header" aria-label="Home">
+          <img src="assets/img/favicon.png" alt="Logo" class="me-2" />
+          <span class="fw-semibold brand-title">Esraa Mahmoud</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex d-md-none ms-3">
+          <button id="darkToggle" class="navbar-dark-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon"></i></button>
         </div>
 
-        <button id="darkToggle" class="dark-toggle" aria-label="Toggle dark mode">
-          <i class="bi bi-moon"></i>
-        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#resume">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+            <li class="nav-item ms-md-3 d-none d-md-block">
+              <button id="darkToggleDesktop" class="navbar-dark-toggle" aria-label="Toggle dark mode"><i class="bi bi-moon"></i></button>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <nav id="navbar" class="navbar mt-3">
-        <ul class="d-flex list-unstyled gap-3 m-0">
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#skills">Skills</a></li>
-          <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#resume">Experience</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="mt-3">
+    <!-- Top meta row (kept for desktop; compact on mobile) -->
+    <div class="container py-3">
+      <p class="mb-1 brand-meta muted contact-line">
+        <a href="mailto:esraa.dev@gmail.com" class="link-underline">esraa.dev@gmail.com</a> •
+        <a href="https://github.com/DevEsraaMahmoud" target="_blank" rel="noopener" class="link-underline">GitHub</a> •
+        <a href="https://www.linkedin.com/in/esraa-mahmoud/" target="_blank" rel="noopener" class="link-underline">LinkedIn</a>
+      </p>
+      <div class="stack-sm">
         <a href="https://drive.google.com/file/d/1oYrDxa_V2YgmSEkNb5M8VZmyTAKS9tZ2/view?usp=sharing"
-   class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener">
-  <i class="bi bi-download me-1"></i>Download CV (PDF)
-</a>
+           class="btn btn-primary btn-sm me-2" target="_blank" rel="noopener">
+          <i class="bi bi-download me-1"></i>Download CV (PDF)
+        </a>
         <a href="#projects" class="btn btn-outline-primary btn-sm">View Projects</a>
-      </div>
-
-      <div class="social-links mt-3">
-        <a href="https://github.com/DevEsraaMahmoud" class="github" target="_blank" rel="noopener" aria-label="GitHub">
-          <i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/esraa-mahmoud/" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <i class="bi bi-linkedin"></i></a>
-        <a href="https://www.facebook.com/iSra2.M7mOD" class="facebook" target="_blank" rel="noopener" aria-label="Facebook">
-          <i class="bi bi-facebook"></i></a>
       </div>
     </div>
   </header>
@@ -165,7 +172,7 @@
     <div class="container">
       <div class="section-title"><h2>Skills</h2></div>
 
-      <div class="row">
+      <div class="row g-3">
         <div class="col-md-4"><h5 class="mb-2">Backend</h5><p class="mb-0">PHP, Laravel, Livewire, Filament, Inertia.js</p></div>
         <div class="col-md-4"><h5 class="mb-2">Frontend</h5><p class="mb-0">Vue.js, React.js, HTML, CSS, JavaScript</p></div>
         <div class="col-md-4"><h5 class="mb-2">Data & Search</h5><p class="mb-0">MySQL, MongoDB, Scout, MeiliSearch, Algolia, Typesense</p></div>
@@ -185,7 +192,7 @@
       </div>
 
       <div id="projectsContainer" class="row gy-4">
-        <!-- Loaded dynamically from projects.json by assets/js/main.js -->
+        <!-- Loaded dynamically -->
         <noscript>Please enable JavaScript to view projects.</noscript>
       </div>
     </div>
@@ -257,7 +264,7 @@
     <div class="container">
       <div class="section-title"><h2>Contact</h2></div>
 
-      <div class="row g-4">
+      <div class="row g-3">
         <div class="col-md-4">
           <div class="info-box p-4 border rounded">
             <i class="bx bx-map"></i>
@@ -294,6 +301,102 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS -->
-  <script src="assets/js/main.js"></script>
+  <script>
+    // Dark mode (mobile + desktop buttons)
+    (function(){
+      const STORAGE="esraa-theme";
+      const body=document.body;
+      const saved=localStorage.getItem(STORAGE);
+      const prefersDark=window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if(saved==="dark"||(!saved&&prefersDark)) body.classList.add("dark");
+
+      const btns=[document.getElementById("darkToggle"), document.getElementById("darkToggleDesktop")].filter(Boolean);
+      btns.forEach(btn=>{
+        const icon=btn.querySelector("i");
+        const sync=()=>{ const isDark=body.classList.contains("dark"); icon.classList.toggle("bi-moon",!isDark); icon.classList.toggle("bi-sun",isDark); };
+        sync();
+        btn.addEventListener("click",()=>{
+          const isDark=body.classList.toggle("dark");
+          localStorage.setItem(STORAGE,isDark?"dark":"light");
+          sync();
+        });
+      });
+    })();
+
+    // Load projects (GitHub + projects.json) — نفس السكربت اللي اتفقنا عليه سابقًا ممكن تحطيه هنا أو في assets/js/main.js
+    (function(){
+      const container=document.getElementById("projectsContainer");
+      if(!container) return;
+
+      const USER="DevEsraaMahmoud";
+      const IMPORTANT=["EcommApp","laravel-tenancy","laravel-content-management-APIs","ZRestaurant"];
+
+      Promise.all([fetchGH(USER), fetchLocal()])
+        .then(([gh, local])=>{
+          const picked=pick(gh, IMPORTANT, 8);
+          const merged=merge(picked, local);
+          render(merged);
+        })
+        .catch(e=>{
+          console.error(e);
+          container.innerHTML='<div class="col-12"><div class="alert alert-warning">Couldn’t load projects now.</div></div>';
+        });
+
+      function fetchGH(u){
+        const base=`https://api.github.com/users/${encodeURIComponent(u)}/repos?per_page=100&type=owner&sort=updated`;
+        return Promise.all([fetch(base), fetch(base+'&page=2')])
+          .then(rs=>Promise.all(rs.map(r=>r.ok?r.json():Promise.reject(r.status))))
+          .then(arr=>arr.flat().filter(r=>!r.fork && !r.archived));
+      }
+      function fetchLocal(){
+        return fetch(new URL('projects.json',location.href).toString())
+          .then(r=>r.ok?r.json():[]).catch(()=>[]);
+      }
+      function score(r){
+        const stars=r.stargazers_count||0;
+        const days=(Date.now()-new Date(r.pushed_at).getTime())/86400000;
+        const fresh=Math.max(0,180-days);
+        const bonus=/php|laravel|vue|livewire|filament|inertia/i.test([r.language,...(r.topics||[])].join(' '))?50:0;
+        return stars*3+fresh+bonus;
+      }
+      function toCard(r){
+        const link=r.homepage && r.homepage.trim()?r.homepage:r.html_url;
+        const img=`assets/img/projects/${r.name.replace(/\s+/g,'-')}.png`;
+        return {title:r.name, description:r.description||'', image:img, link};
+      }
+      function pick(repos,names,max){
+        const map=new Map(repos.map(r=>[r.name.toLowerCase(),r]));
+        const prior=names.map(n=>map.get(n.toLowerCase())).filter(Boolean);
+        const rest=repos.filter(r=>!prior.includes(r)).sort((a,b)=>score(b)-score(a));
+        return [...prior,...rest].slice(0,max).map(toCard);
+      }
+      function merge(a,b){
+        const seen=new Set(); const out=[];
+        [...a,...(Array.isArray(b)?b:[])].forEach(p=>{
+          const k=(p.title||'').toLowerCase(); if(!seen.has(k)){seen.add(k); out.push(p);}
+        });
+        return out;
+      }
+      function esc(s){return String(s).replace(/[&<>"]/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[m]));}
+      function render(arr){
+        if(!arr.length){container.innerHTML='<div class="col-12"><div class="alert alert-info">No projects yet.</div></div>'; return;}
+        container.innerHTML=arr.map(p=>`
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="portfolio-wrap h-100 d-flex flex-column">
+              <img src="${esc(p.image||'assets/img/projects/placeholder.png')}" alt="${esc(p.title)}" class="thumb">
+              <div class="p-3 d-flex flex-column flex-grow-1">
+                <h5 class="mb-1">${esc(p.title)}</h5>
+                <p class="muted mb-3">${esc(p.description||'')}</p>
+                <div class="mt-auto">
+                  <a class="btn btn-sm btn-outline-primary w-100" target="_blank" rel="noopener" href="${esc(p.link||'#')}">
+                    <i class="bi bi-link-45deg me-1"></i>Open
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>`).join('');
+      }
+    })();
+  </script>
 </body>
 </html>
