@@ -154,7 +154,6 @@
       `assets/img/projects/${slug}.jpg`,
       `assets/img/projects/${slug}.webp`
     ];
-    // هنرجّع أول احتمال، ولو الصورة مش موجودة هيظهر Broken — يُفضّل تحطي placeholder.png
     return candidates[0] || "assets/img/projects/placeholder.png";
   }
 
